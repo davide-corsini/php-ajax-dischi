@@ -1,0 +1,25 @@
+header{
+    width: 100%;
+    height:  $height_header;
+    background: $black;
+    & .container{
+        @include flex;
+        // debug
+        background: red;
+        height: 100%;
+        & .nav-dx{
+            width: 60%;
+            height: 100%;
+            background: brown;
+            & ul.menu-dx{
+                height: 100%;
+                width: 100%;
+                @include flex(space-between);
+                list-style: none;
+                & img{
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

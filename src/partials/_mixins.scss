@@ -1,0 +1,19 @@
+
+@mixin sfondoMain{
+    background: linear-gradient(-90deg,rgba(14,162,139,.4) 30%,rgba(14,162,139,0));
+    z-index: 0;
+}
+
+
+@mixin flex($just:flex-start, $align:center) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin flex-c($just:center, $align:center){
+    display: flex;
+    flex-direction: column;
+    justify-content: $just;
+    align-items: $align;
+}
