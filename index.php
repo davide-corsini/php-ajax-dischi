@@ -54,7 +54,7 @@
             <h2 style="color: white;">NAVIGA</h2>
 
             <div class="box-main" style="color: white;">
-                <?php foreach($database as $key => $value) {?>
+                <?php foreach($database as $value) {?>
                     <div class="post">
                         <h3>
                             <?php echo $value['author']; ?>
