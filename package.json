@@ -1,0 +1,23 @@
+{
+  "name": "php-ajax-dischi",
+  "version": "1.0.0",
+  "description": "php-ajax-dischi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "laravel-mix": "^6.0.13",
+    "postcss": "^8.1.14",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
+}
