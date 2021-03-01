@@ -4,9 +4,42 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
 .container {
   max-width: 90%;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+}
+
+.btn-classic {
+  background: #ffffff;
+  color: aqua;
+  border: 2px solid aqua;
+  border-radius: 5px;
+  background: transparent;
+  padding: 2%;
+}
+.btn-classic:hover {
+  background: #ebebeb;
+  transition: all 0.3s ease;
+}
+.btn-classic:active {
+  background: #bfbfbf;
 }
 
 header {
@@ -16,15 +49,31 @@ header {
 }
 header .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  background: red;
   height: 100%;
 }
-header .container .nav-dx {
+header .container .nav-sx {
   width: 60%;
   height: 100%;
-  background: brown;
+}
+header .container .nav-sx ul.menu-sx {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header .container .nav-sx ul.menu-sx li a {
+  color: white;
+}
+header .container .nav-sx ul.menu-sx img {
+  width: 150px;
+}
+header .container .nav-dx {
+  width: 25%;
+  height: 100%;
 }
 header .container .nav-dx ul.menu-dx {
   height: 100%;
@@ -34,6 +83,38 @@ header .container .nav-dx ul.menu-dx {
   align-items: center;
   list-style: none;
 }
-header .container .nav-dx ul.menu-dx img {
-  width: 150px;
+header .container .nav-dx ul.menu-dx li a {
+  color: white;
+}
+header .container .nav-dx ul.menu-dx li a:nth-child(2) {
+  width: 80%;
+}
+
+main {
+  width: 100%;
+  padding: 5% 0;
+  background: linear-gradient(-90deg, rgba(14, 162, 139, 0.4) 30%, rgba(14, 162, 139, 0));
+  z-index: 0;
+}
+main .box-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .box-main div.post {
+  height: 50%;
+  flex-basis: calc(100% / 5 - 20px);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .box-main div.post img {
+  width: 80%;
+  height: 100%;
 }

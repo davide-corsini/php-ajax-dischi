@@ -3,21 +3,39 @@ header{
     height:  $height_header;
     background: $black;
     & .container{
-        @include flex;
+        @include flex(space-between);
         // debug
-        background: red;
         height: 100%;
-        & .nav-dx{
+        & .nav-sx{
             width: 60%;
             height: 100%;
-            background: brown;
-            & ul.menu-dx{
+            & ul.menu-sx{
                 height: 100%;
                 width: 100%;
+                & li a{
+                    color: white;
+
+                }
                 @include flex(space-between);
                 list-style: none;
                 & img{
                     width: 150px;
+                }
+            }
+        }
+        & .nav-dx{
+            width: 25%;
+            height: 100%;
+            & ul.menu-dx{
+                height: 100%;
+                width: 100%;
+                & li a{
+                    color: white;
+                }
+                @include flex(space-between);
+                list-style: none;
+                & li a:nth-child(2){
+                    width: 80%;
                 }
             }
         }
