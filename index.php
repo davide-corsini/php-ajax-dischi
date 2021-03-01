@@ -30,8 +30,9 @@
             <div class="nav-sx">
                 <ul class="menu-sx">
                     <li><a href="#">
-                        <img src="img/logo-tidal.jpg" alt="">
-                    </a></li>
+                            <img src="img/logo-tidal.jpg" alt="">
+                        </a>
+                    </li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">In primo piano</a></li>
                     <li><a href="#">Magazine</a></li>
@@ -59,7 +60,10 @@
                         <h3>
                             <?php echo $value['author']; ?>
                         </h3>
-                        <img src="<?php echo $value['poster']; ?>" alt="">
+                        <a href="<?php echo $value['link']; ?>">
+                            <img src="<?php echo $value['poster']; ?>" alt="">
+
+                        </a>
                         <h4>
                             <?php echo $value['genre']; ?>
                         </h4>
