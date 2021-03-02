@@ -118,3 +118,9 @@ main .box-main div.post img {
   width: 80%;
   height: 100%;
 }
+main .title-suono {
+  width: 500px;
+  background: red;
+  height: 300px;
+  border: 1px solid white;
+}

@@ -17,9 +17,17 @@ main {
             border-radius: 8px;
             @include flex-c(space-around, center);
             & img{
-                width: 80%;
-                height: 100%;
+                width: 150px;
+                height: 150px;
             }
         }
     }
+    
+    & .title-suono{
+            width: 500px;
+            background: red;
+            height: 300px;
+            border: 1px solid white;
+        }
+    
 }
