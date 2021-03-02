@@ -41,8 +41,15 @@
         <main>
             <div class="container">
                 <h2 style="color: white;">NAVIGA</h2>
+                
+                <select @change="filterBy" v-model="search" >
+                    <option  v-for="genere in generi" :value="genere">
+                        {{ genere }}
+                    </option>
+                </select>
+
                 <div class="box-main">
-                    <div v-for="element in arrayDischi" class="post">
+                    <div v-for="element in arrayDischiFiltrato" class="post">
                         <h3>{{ element.author }}</h3>
                         <a href="">
                             <img :src="element.poster" alt="">
