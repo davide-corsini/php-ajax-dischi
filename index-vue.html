@@ -51,14 +51,61 @@
                 <div class="box-main">
                     <div v-for="element in arrayDischiFiltrato" class="post">
                         <h3>{{ element.author }}</h3>
-                        <a href="">
-                            <img :src="element.poster" alt="">
-                        </a>
+                        
+                        <!-- <img :src="element.poster" alt=""> -->
+                        <div class="special">
+                            <div class="block">
+                                <div :style='`background-image: url(${element.poster})`' class="side -main"></div>
+                                <div :style='`background-image: url(${element.poster})`' class="side -left"></div>
+                            </div>
+                            <div class="block">
+                                <div :style='`background-image: url(${element.poster})`' class="side -main"></div>
+                                <div :style='`background-image: url(${element.poster})`' class="side -left"></div>
+                            </div>
+                            <div class="block">
+                                <div :style='`background-image: url(${element.poster})`' class="side -main"></div>
+                                <div :style='`background-image: url(${element.poster})`' class="side -left"></div>
+                            </div>
+                        </div>
                         <h4>{{ element.genre }}</h4>
                         <p>{{ element.year }}</p>
                     </div>
                 </div>
-            </div>
+
+                <div class="box-effect">
+                    <div  v-for="(element, index) in arrayEffects" class="sub-effect">
+                        <a  style="text-decoration: none;" href="#">
+                            <h3 @mouseenter="choiceEffect(index)"  style="color: rgba(255, 255, 255, 0.541); font-size: 40px;">{{ element.title }}</h3>
+                        </a>
+                        <div v-if="contatore == index" class="special">
+                            <div class="block">
+                                <div :style='`background-image: url(${element.logo})`' class="side -main"></div>
+                                <div :style='`background-image: url(${element.logo})`' class="side -left"></div>
+                            </div>
+                            <div class="block">
+                                <div :style='`background-image: url(${element.logo})`' class="side -main"></div>
+                                <div :style='`background-image: url(${element.logo})`' class="side -left"></div>
+                            </div>
+                            <div class="block">
+                                <div :style='`background-image: url(${element.logo})`' class="side -main"></div>
+                                <div :style='`background-image: url(${element.logo})`' class="side -left"></div>
+                            </div>
+                        </div>
+                        <!-- <img class="img-effect" v-if="contatore == index" :src="element.logo" alt=""> -->
+                        <p v-if="contatore == index" class="description">
+                            {{ element.descrizione }}
+                        </p>
+                        <!-- <img :src="element.logo" alt=""> -->
+                    </div>
+                </div>
+
+                <div class="box-suono">
+                    <h2>Eleva il tuo suono</h2>
+                    <p>Con la nostra esperienza audio senza perdite e la qualitá del suono ad alta fedeltá, riproduci musica in streaming come non l'hai mai sentita prima. Nessun compromesso. Solo un suono puro.</p>
+                </div>
+
+                
+                
         </main>
     </div>
 
